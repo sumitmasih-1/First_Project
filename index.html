@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal PortFolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/77dad0dfc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Sumit_Name_Text-removebg-preview (1).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text"> 
+                <p>Full-Stack Developer</p>
+                <h1>Hey, I'm <span>Sumit Shah</span><br> From Delhi, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--  -------------About-----------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="WhatsApp Image 2024-11-16 at 6.03.35 PM (1).jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I consider myself a
+                        responsible and orderly
+                        person.
+                        I am looking forward to
+                        my other work
+                        experience,
+                        I work as a full-stack developer here, responsible for building, deploying and maintaining internal web applications. </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Graphics</span><br>Designing Web/App interfaces</li>
+                                <li><span>Front-End Development</span><br>Front-End Website Developement</li>
+                                <li><span>Back-End Developement</span><br>Back-End Website Developement</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Freelancing</span><br>2 Years in Graphic Designing.</li>
+                                <li><span>MG Enterprises</span><br>Data-Entry work and Accountant</li>
+                                <li><span>Costify-India</span><br>Social media manager & Sales manager.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>JIMS/JCC</span><br>Jagannath Community College</li>
+                                <li><span>SJPS </span><br>Private School class 1 to 10</li>
+                                <li><span>GBSS</span><br>High school from government - Commerce stream</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Services------------------ -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Graphic design is the process of using visual and textual content to plan and project ideas and experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>Front-End</h2>
+                    <p>Front-End website is everything the user either sees or interacts with when they visit the website.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Back-End</h2>
+                    <p>back end refers to parts of a computer application or a program's code that allow it to operate and that cannot be accessed by a user.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- -------------------------  My work   ----------------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mywork</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Login page.jpeg">
+                    <div class="layer">
+                        <h3>Login Page</h3>
+                        <p>This is Login page and this is transparent login page, with beautifull background.</p>
+                        <a href="Login form/log.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="calculator.jpeg">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>This is calculator, amazing working calculator, you can calculate her.</p>
+                        <a href="Calculator/calc.html"><i class="fa-solid fa-calculator"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Portfolio.jpeg">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>This is beautifull 2nd portfolio project design, HTML, CSS, and JS.</p>
+                        <a href="Index.html"><i class="fa-solid fa-user-tie"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+      </div>
+
+      <!-- ----------------- Contact ------------------------  -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sumitmasih678@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 98911 94288</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sumit.masih.123276/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sumitmasih.1/"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://www.youtube.com/@bibletruewords.1/videos"><i class="fa-brands fa-youtube"></i></i></a>
+                        <a href="https://www.snapchat.com/"><i class="fa-brands fa-snapchat"></i></i></a>
+                    </div>
+                    <a href="Sumit shah CV Resume (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Made by <i class="fa-solid fa-heart"></i> Sumit shah.</p>
+        </div>
+       </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
